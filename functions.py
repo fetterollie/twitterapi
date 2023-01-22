@@ -48,6 +48,8 @@ def generate_average_sentiment_score(keyword: str) -> int:
     tweets = []
     tweets_clean = clean_twets(tweets)
     sentiment_scores = get_sentiment(tweets_clean)
+    
+    average_score = statistics.mean(sentiment_scores)
     return
 
 
